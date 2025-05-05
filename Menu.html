@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu For Urusha's Kitchen</title>
+</head>
+
+<body>
+
+  <header>
+    <h1> Urusha's Kitchen </h1>
+    <p>Authentic Flavors from the corner of Kathmandu 🍛 </p>
+    <nav> <!-- It wraps navigation links that help users move around the website -->
+      <a href="#menu">Menu</a> <br> <!-- # used to jump to a part inside this same page and not go to another page -->
+      <a href="#location">Location</a>
+    </nav>
+  </header>
+<hr>
+
+ <section>
+  <h2> Welcome To Urusha's Kitchen</h2>
+  <p>We serve fresh and flavorful Nepali and Continental cuisine. Explore our menu below!</p>
+  <img src="media/Breakfast.jpg" alt="Breakfast spread at Urusha's Kitchen" width="300">
+ </section>
+<hr>   <!-- Horizontal line -->
+<section id="menu"> <!-- When you click menu inside nav tag, it leads here -->
+<h2>Our Menu</h2>
+<table border="1" cellpadding = "10"> <!-- refers to the space between the border of a table cell and its content-->
+
+<thead> <!-- Table Head -->
+  <tr> <!-- Table row -->
+    <th> Dish </th> <!-- Header Cell -->
+    <th> Category </th>
+    <th> Price (in Rs) </th>
+  </tr>
+</thead>
+
+<tbody> <!-- Table Body -->
+
+  <tr>
+    <td> Chicken Sekuwa </td> <!-- Table data -->
+    <td> Starter </td>
+    <td> 250 </td>
+  </tr>
+
+  <tr>
+    <td> Thakali Khana </td>
+    <td> Main Course </td>
+    <td> 350 </td>
+  </tr>
+
+  <tr>
+    <td>Mango Lassi</td>
+    <td>Drink</td>
+    <td>120</td>
+  </tr>
+
+  <tr>
+    <td>Chocolate Mousse</td>
+    <td>Dessert</td>
+    <td>150</td>
+  </tr>
+
+</tbody>
+</table>
+</section>
+<hr>
+
+<section>
+  <h2> Restaurant Ambience </h2>
+  <audio src="media/lost-in-dreams-abstract-chill-downtempo-cinematic-future-beats-270241.mp3" controls type="audio/mpeg">Your Browser does not support the audio element</audio> <!-- controls allows us to pause and play the media -->
+  <br> <br> <br>
+  <video width="320" height="240" controls>
+    <source src="media/restaurant video.mp4" type="video/mp4">Your Browser does not support the video tag. <!-- can't add youtube links here -->
+  </video>
+</section>
+<hr>
+
+<footer id="location">
+  <p>📍 Urusha's Kitchen, Patan, Kathmandu</p>
+  <p> 📞 01-5554443 </p>
+  <p>&copy; 2025 Urusha's Kitchen. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urusha's Tech Conference</title>
+</head>
+
+<body>
+ <header>
+  <h1> 🌐 Urusha Tech Conference 2025</h1>
+  <p>The biggest event for young tech minds in Kathmandu!</p>
+  <nav>
+    <a href="#schedule">Schedule</a> |
+    <a href="#speakers">Speakers</a> |
+    <a href="#register">Register</a> |
+    <a href="#contact">Contact</a> |
+  </nav>
+ </header> 
+<hr>
+
+<section>
+<h2>Welcome!</h2>
+<p>Join us for a full-day event filled with learning, networking, and innovation.</p>
+<img src="media/Tech Conference.jpg" alt="Crowd at tech conference" width="300">
+</section>
+<hr>
+
+<section id="schedule">
+<h2>📅 Event Schedule</h2>
+<table border="1" cellpadding="10">
+
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Session</th>
+      <th>Speaker</th>
+    </tr>
+  </thead>
+
+<tbody>
+
+  <tr>
+    <td>09:00 AM</td>
+    <td>Opening Ceremony</td>
+    <td>Er. Urusha Niroula</td>
+  </tr>
+
+<tr>
+  <td>11:00 AM</td>
+  <td>Future of AI</td>
+  <td> Steve Jobs </td>
+</tr>
+
+<tr>
+  <td>02:00 PM</td>
+  <td>Programming Trends</td>
+  <td>Ada Lovelace</td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr>
+
+<section id="speakers">
+  <h2>🎤 Our Speakers</h2>
+  <ul>
+    <li>Er. Urusha Niroula - Event Organizer</li>
+    <li>Steve Jobs - AI Researcher</li>
+    <li>Ada Lovelace - Programming Trends</li>
+  </ul>
+</section>
+<hr>
+
+<section>
+<h2>🎧 Conference Ambience</h2>
+<audio src="media/lost-in-dreams-abstract-chill-downtempo-cinematic-future-beats-270241.mp3" type="audio/mp3" controls >Your browser does not support audio</audio>
+
+<h3>🎥 Conference Highlights</h3> <!-- There is more spacing because h3 and video both are block elements, we can use css to reduce it -->
+<video src="media/Conference Highlights.mp4" controls type="video/mp4" width="320" height="240">Your browser does not support this video tag</video>
+</section>
+<hr>
+
+<section id="register">
+  <h2>📝 Register Now</h2>
+  <!-- <form>: This is used to create a form. It allows users to input data and send it to the server. -->
+  <form action="#" method="post"> <!-- action:This specifies where the form data should be sent when the form is submitted. The "#" is a placeholder. Normally, it would point to a server-side script (e.g., a PHP or JavaScript file) that processes the form data., method="post": This tells the browser to send the form data as a POST request when the form is submitted. POST is used when sending data that needs to be kept secure -->
+    
+    <label for="fullname">Full Name:</label><br> <!-- <label>: This creates a label for the Full Name field. The for="fullname" links this label to the input field with id="fullname", making the form more accessible (clicking on the label focuses on the input). -->
+    <input type="text" id="fullname" name="fullname" required> <!-- <input type="text">: This creates a text input field where users can type their full name. id="fullname": This is the identifier for the input field.
+    name="fullname": This is the name that will be sent when the form is submitted (used by the server to reference this input field). 
+    required: This makes the field mandatory. The user cannot submit the form unless this field is filled. --> <br><br>
+  
+    <label for="email">Email:</label> <br>
+    <input type="email" id="email" name="email" placeholder="you@example.com"> <br><br>
+  
+    <label for="gender">Gender:</label> <br>
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="other"> Other <br><br>
+
+    <label for="sessions">Preferred Session:</label> <br>
+    <select name="session" id="session"> <!-- This creates a drop-down menu where users can choose one option. -->
+    <option value="morning">Morning</option>
+    <option value="afternoon">Afternoon</option>
+    </select> <br><br>
+
+    <label for="topics"> Topics you're interested in:</label> <br>
+    <input type="checkbox" name="topic" value="frontend"> Frontend
+    <input type="checkbox" name="topic" value="ai"> AI
+    <input type="checkbox" name="topic" value="programming"> Programming Trends <br><br>
+
+    <label for="message"> Message: </label> <br>
+    <textarea name="message" id="message" rows="4" cols="30"></textarea> <br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+<hr>
+
+<footer id="contact">
+  <p>📍 Venue: IT Park, Banepa, Kathmandu</p>
+  <p>📞 Contact: 01-1234567</p>
+  <p>&copy; 2025 Urusha Tech Conference. All rights reserved.</p>
+</footer>
+
+</section>
+</body>
+</html>

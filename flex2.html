@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Everything Flexbox</title>
+</head>
+
+<!-- Each flex only applies to its direct children — it does NOT carry over to nested elements. The flex on <body> controls how the white box div is positioned on the page. -->
+<body class="bg-gray-600 flex items-center justify-center p-6 min-h-screen">
+  <div class="bg-white p-6 rounded-lg shadow-lg max-w-5xl w-full">
+    
+   <h2 class="text-2xl font-bold text-center mb-6">Our Team</h2>
+
+    <!-- Flex applies only to direct children of the element where it’s defined.This div has three direct children: the 3 cards: -->
+    <div class="flex flex-wrap justify-between items-stretch gap-4">
+
+     <!-- Card 1 -->
+      <div class="bg-blue-100 p-4 rounded-lg w-full sm:w-1/2 lg:w-1/4 flex flex-col items-center justify-between flex-grow order-2 ">
+        <!-- w-full: Full width on small screens (takes entire row).
+        sm:w-1/2: Half-width (50%) on small and up screens (≥640px).
+        lg:w-1/4: One-fourth width (25%) on large and up screens (≥1024px). -->
+        <h3 class="text-xl font-semibold">Alice</h3>
+        <p class="text-sm text-gray-700">Frontend Developer</p>
+      </div> 
+
+      <!-- Card 2 -->
+      <div class="bg-green-100 p-4 rounded-lg w-full sm:w-1/2 lg:w-1/4 flex flex-col items-center justify-between flex-shrink order-1">
+        <!-- flex: Enables flexbox layout on this card.flex-col: Direction is vertical (top to bottom).items-center: Horizontally center the children (h3 and p).
+        justify-between: Push first and last child to top and bottom of the vertical column (space between them). -->
+        <h3 class="text-xl font-semibold">Bob</h3>
+        <p class="text-sm text-gray-700">Backend Developer</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-yellow-100 p-4 rounded-lg w-full sm:w-1/2 lg:w-1/4 flex flex-col items-center justify-between flex-grow order-3">
+        <!-- flex-grow: Allows this card to grow and take up more space if needed.
+        order-2: Sets this card’s position in the flex container. Appears second, regardless of HTML order.-->
+        <h3 class="text-xl font-semibold">Carol</h3>
+        <p class="text-sm text-gray-700">Graphic Designer</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

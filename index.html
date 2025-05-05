@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!--Tells browser this is HTML5-->
+
+<html lang="en">  
+
+<head>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- We add this in head as it gives us all Tailwind classes immediately. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page mobile responsive -->
+  <title>My Personal Bio</title> <!-- Appears on top of tab -->
+</head>
+
+<body class="bg-gray-50 text-gray-800"> <!-- All visible contents go here -->
+
+<!-- Header, section and footer is used to make code cleaner, easier to manage and improve SEO -->
+
+ <header class="bg-blue-100 text-center p-8"> 
+  <h1 class="text-5xl font-bold text-blue-700 mb-4"> Hi, I am Urusha 🙋‍♀️</h1>
+  <p class="text-xl italic text-gray-700">Aspiring Full Stack Developer from Kathmandu</p> <!-- em is the emphasis tag -->
+ </header> 
+
+<section class="p-8 text-center">
+ <h2 class="text-3xl font-semibold mb-6"> About Me! 😊</h2>
+ <p class="max-w-xl mx-auto text-gray-600">
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ </p> <!-- 'lorem' is the place holder used  -->
+ </section>
+
+ <section class="p-8 text-center">
+  <h2 class="text-3xl font-semibold mb-6">My Photo 📸</h2>
+  <img src="media/urusha1.jpg" alt="Profile" class="mx-auto rounded-full w-40 h-40 object-cover shadow-lg"> 
+ </section>
+
+ <section class="p-8 text-center">
+  <h2 class="text-3xl font-semibold text-center mb-6"> Social Links 🔗</h2>
+  <ul class="flex flex-col items-center space-y-4"> <!-- Unordered List -->
+    <li><a href="https://www.instagram.com" target="_blank" class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-6 rounded-full">Instagram</a></li>
+    <li><a href="https://www.facebook.com" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full">Facebook</a></li>
+    <!-- List and anchor tag -->
+  </ul>
+ </section>
+
+ <section class="p-8 text-center">
+  <h2 class="text-3xl font-semibold text-center mb-6"> My Goals 🎯</h2>
+  <ol class="list-decimal list-inside max-w-md mx-auto space-y-2"> <!-- Ordered List -->
+    <li>Master HTML, CSS and JS</li>
+    <li>Build Amazing Websites</li>
+    <li>Get a Frontend Job in KTM</li>
+  </ol>
+ </section>
+
+ <footer class="border-t mt-10 p-6 text-center text-gray-500 text-sm">
+  <p> &copy; 2025 Urusha Niroula. All rights reserved.</p> <!-- &copy; is the HTML entity for the copyright symbol-->
+ </footer>
+</body>
+
+</html>
